@@ -1,10 +1,11 @@
 "use client";
 import Image from 'next/image'
 import React from 'react'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 import Authentication from './Authentication';
 import { useAuthContext } from '../provider';
-import { Link } from 'lucide-react';
+import Link from 'next/link';
+
 
 function Header() {
     const {user}=useAuthContext();
@@ -20,11 +21,12 @@ function Header() {
                 <Button className="bg-white text-black font-bold border border-black px-4 py-2 rounded-sm cursor-pointer">Get started</Button>  
             </Authentication>
              :<div className='flex items-center gap-3'>
+                
                 <Link href={'/dashboard'}>
                      <Button className="bg-white text-black font-bold border border-black px-4 py-2 rounded-sm cursor-pointer" >Dashboard</Button>
                 </Link >
                
-                <Image src={user?.photoURL} alt='userImg' width={40} height={40} className='rounded-full'/>
+                {(user?.pictureURL)&& <Image src={user?.pictureURL} alt='userImg' width={40} height={40} className='rounded-full'/>}
              </div> }
         </div>    
    </div>
