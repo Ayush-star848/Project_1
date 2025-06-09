@@ -17,8 +17,7 @@ import Link from 'next/link'
 import { SidebarMenu } from '@/components/ui/sidebar'
 import { usePathname } from 'next/navigation'
 import { Gem } from 'lucide-react'
-import { useAuthContext}  from '@/provider.js'
-
+import { useAuthContext } from '@/app/provider'
 
 
 const MenuItems = [
@@ -46,7 +45,6 @@ const MenuItems = [
 
 function AppSidebar() {
     const path = usePathname();
-    console.log(path);
     const {user}  = useAuthContext();
   return (
     <Sidebar>
@@ -64,7 +62,9 @@ function AppSidebar() {
         <SidebarGroup>
            <SidebarGroupContent>
              <div className='mx-4 mt-4'>
-                <Button className="w-full font-semibold cursor-pointer">+Create New Video</Button>
+                <Link href={'/create-new-video'}>
+                    <Button className="w-full font-semibold cursor-pointer">+Create New Video</Button>
+                </Link>
              </div> 
              <SidebarMenu>
                 {MenuItems.map((menu, index) => (

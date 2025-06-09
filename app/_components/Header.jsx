@@ -21,13 +21,12 @@ function Header() {
                 <Button className="bg-white text-black font-bold border border-black px-4 py-2 rounded-sm cursor-pointer">Get started</Button>  
             </Authentication>
              :<div className='flex items-center gap-3'>
-                
                 <Link href={'/dashboard'}>
-                     <Button className="bg-white text-black font-bold border border-black px-4 py-2 rounded-sm cursor-pointer" >Dashboard</Button>
+                     <Button className="bg-white text-black font-bold border border-black px-4 py-2 rounded-sm cursor-pointer">Dashboard</Button>
                 </Link >
                
                 {(user?.pictureURL)&& <Image src={user?.pictureURL} alt='userImg' width={40} height={40} className='rounded-full'/>}
-             </div> }
+             </div>} 
         </div>    
    </div>
   );

@@ -5,7 +5,7 @@ import React from 'react'
 
 
 function Authentication({children}) {
-    const provider = new GoogleAuthProvider();
+    const provider = new GoogleAuthProvider(); 
 
     const onSignInClick=() => {
         signInWithPopup(auth, provider)

@@ -3,7 +3,7 @@ import { SidebarProvider } from '@/components/ui/sidebar'
 import React from 'react'
 import AppSidebar from './_components/AppSidebar'
 import AppHeader from './_components/AppHeader'
-import { useAuthContext } from '../provider'
+import { useAuthContext } from '@/app/provider'
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 
@@ -27,10 +27,13 @@ function DashboardProvider({children}) {
         <AppSidebar />
     <div className='w-full'>
         <AppHeader />
-        {children}
+        <div className='p-12'>
+          {children}
+        </div>
     </div>
     </SidebarProvider>
   )
 }
+
 
 export default DashboardProvider
