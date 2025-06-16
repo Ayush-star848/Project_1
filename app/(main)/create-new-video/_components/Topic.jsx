@@ -7,6 +7,8 @@ import { useState } from 'react'
 import { Textarea } from '@/components/ui/textarea'
 import { Loader2Icon, SparklesIcon } from 'lucide-react'
 import axios from 'axios'
+// import { toast } from 'react-hot-toast'
+import { useAuthContext } from '@/app/provider'
 
 
 const suggestions = [
@@ -30,8 +32,13 @@ function Topic({onHandleInputChange}) {
     const [selectedScriptIndex,setSelectedScriptIndex] = useState();
     const [scripts,setScripts] = useState();
     const [loading, setLoading] = useState(false);
+    const {user} = useAuthContext();
 
     const GenerateScript= async () => {
+         if(user?.credits <= 0) {
+            toast("You don't have enough credits to create a video. Please purchase more credits.");
+            return;
+        }
         setLoading(true);
         setSelectedScriptIndex(null);
         try{
@@ -88,7 +95,9 @@ function Topic({onHandleInputChange}) {
                     <div key={index}
                      className={`p-2 border-2 rounded-lg cursor-pointer
                      ${selectedScriptIndex == index && 'border-white bg-secondary'}`}
-                     onClick={() => setSelectedScriptIndex(index)}>
+                     onClick={() => {setSelectedScriptIndex(index);
+                        onHandleInputChange('script',item?.content)
+                     }}>
                         <h2 className='line-clamp-4 text-sm text-gray-400'>{item.content}</h2>
                     </div> 
                 ))}

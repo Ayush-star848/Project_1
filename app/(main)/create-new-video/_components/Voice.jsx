@@ -4,54 +4,51 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 // import Image from "/lucide-react"
 
 const voiceOptions = [
-      {
+  {
     "value": "af_sarah",
     "name": "🇺🇸 Sarah (Female)"
   },
   {
-    "value": "af_matt",
-    "name": "🇺🇸 Matt (Male)"
+    "value" : "af_alloy",
+    "name":  "🇺🇸 Alloy (Female)"
   },
   {
-    "value": "af_john",
-    "name": "🇺🇸 John (Deep Male)"
+    "value": "hf_alpha",
+    "name" : "🇮🇳 Alpha (Female)"
   },
-  {
-    "value": "in_aisha",
-    "name": "🇮🇳 Aisha (Indian Female)"
+   {
+    "value": "hf_beta",
+    "name" : "🇮🇳 Beta (Female)"
   },
-  {
-    "value": "in_raj",
-    "name": "🇮🇳 Raj (Indian Male)"
+   {
+    "value": "bm_lewis",
+    "name" : "🇬🇧 Lewis (Male)"
   },
-  {
-    "value": "uk_charlotte",
-    "name": "🇬🇧 Charlotte (UK Female)"
+   {
+    "value": "bm_daniel",
+    "name" : "🇬🇧 Daniel (Male)"
   },
-  {
-    "value": "hi_ravi",
-    "name": "🇮🇳 Ravi (Male - Hindi)"
+   {
+    "value": "hm_psi",
+    "name" : "🇮🇳 Psi (Male)"
   },
-  {
-    "value": "hi_ananya",
-    "name": "🇮🇳 Ananya (Female - Hindi)"
+   {
+    "value": "ff_siwis",
+    "name" : "🇫🇷 Siwis (Female)"
   },
-  {
-    "value": "en_ind_amit",
-    "name": "🇮🇳 Amit (Male - Indian English)"
+   {
+    "value": "am_echo",
+    "name" : "🇺🇸 Echo (Male) "
   },
-  {
-    "value": "en_ind_priya",
-    "name": "🇮🇳 Priya (Female - Indian English)"
+   {
+    "value": "hm_omega",
+    "name" : "🇮🇳 Omega (Male)"
   },
-  {
-    "value": "ta_karthik",
-    "name": "🇮🇳 Karthik (Male - Tamil)"
+   {
+    "value": "am_liam",
+    "name" : "🇺🇸 Liam(Male)"
   },
-  {
-    "value": "fr_luc",
-    "name": "🇫🇷 Luc (French Male)"
-  }
+   
 ]
 
 function Voice({onHandleInputChange}) {

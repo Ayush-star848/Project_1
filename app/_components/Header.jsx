@@ -1,10 +1,11 @@
 "use client";
+import Link from 'next/link';
 import Image from 'next/image'
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import Authentication from './Authentication';
 import { useAuthContext } from '../provider';
-import Link from 'next/link';
+
 
 
 function Header() {
@@ -15,7 +16,7 @@ function Header() {
         <Image src={'/logo.svg'} alt='logo' width={30} height={30} />
         <h2 className='text-2xl font-bold'>Mova</h2>
             </div>
-        <div>
+    <div>
 
         {!user?    <Authentication>
                 <Button className="bg-white text-black font-bold border border-black px-4 py-2 rounded-sm cursor-pointer">Get started</Button>  

@@ -1,5 +1,7 @@
 "use client"
 import { useAuthContext } from '@/app/provider'
+// import { useAuthContext } from '../provider'
+
 import { SidebarTrigger } from '@/components/ui/sidebar'
 import Image from 'next/image'
 import React from 'react'
