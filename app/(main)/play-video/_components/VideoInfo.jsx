@@ -1,8 +1,8 @@
 import { ArrowLeft, DownloadIcon } from 'lucide-react'
 import React from 'react'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import Link from 'next/link'
-
+ 
 function VideoInfo({videoData}) {
   return (
     <div className='p-5 border rounded-lg shadow-lg'>

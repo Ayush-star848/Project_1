@@ -4,7 +4,7 @@ import Topic from './_components/Topic'
 import VideoStyle from './_components/VideoStyle';
 import Voice from './_components/Voice';
 import Captions from './_components/Captions';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/Button';
 import { Loader2Icon, WandSparkles } from 'lucide-react';
 import Preview from './_components/Preview';
 import axios from 'axios';

@@ -2,12 +2,12 @@
 import Link from 'next/link';
 import Image from 'next/image'
 import React from 'react'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import Authentication from './Authentication';
 import { useAuthContext } from '../provider';
 
 
-
+ 
 function Header() {
     const {user}=useAuthContext();
   return (
