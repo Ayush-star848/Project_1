@@ -11,11 +11,11 @@ Just give a prompt 💡 — and let Mova work its magic with smart edits ✂️,
 Perfect for creators 🧑‍🎨, marketers 📈, and storytellers 📖 looking to stand out effortlessly 🌟.</p>
 
         <div className='mt-7 gap-8 flex'>
-            <Button className="bg-gray-600 text-white font-bold border border-black px-6 py-4 rounded-sm">Explore
+            <Button>Explore
              </ Button >
 
              <Authentication>
-             <Button className="bg-white text-black font-bold border border-black px-4 py-2 rounded-sm cursor-pointer">Get started</Button>
+             <Button>Get started</Button>
              </Authentication>
         </div>
     </div>
