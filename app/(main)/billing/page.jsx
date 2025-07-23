@@ -2,7 +2,7 @@
 "use client";
 import FeatureMotionWrapper from "@/app/_components/FramerMotion/FeatureMotionWrapperMap";
 import { useAuthContext } from "@/app/provider";
-import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { PayPalButtons } from "@paypal/react-paypal-js";
 import { CircleDollarSign } from "lucide-react";
 import { IndianRupeeIcon } from "lucide-react";

@@ -64,7 +64,7 @@ import React, {
 } from "react";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "@/configs/firebaseconfig";
+import { auth } from "@/configs/firebaseConfig";
 import { AuthContext } from "./_context/AuthContext";
 import { useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";

@@ -2,7 +2,7 @@
 import React from 'react'
 import { Input } from '@/components/ui/input'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 import { useState } from 'react'
 import { Textarea } from '@/components/ui/textarea'
 import { Loader2Icon, SparklesIcon } from 'lucide-react'
