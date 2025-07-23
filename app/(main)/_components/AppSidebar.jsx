@@ -35,12 +35,12 @@ const MenuItems = [
    },
     {
     title: 'Explore',
-    url: '/explore',
+    url: '/dashboard',
     icon: Search
    },
     {
     title: 'Billing',
-    url: '/biling',
+    url: '/billing',
     icon: WalletCards
    },
 ]
