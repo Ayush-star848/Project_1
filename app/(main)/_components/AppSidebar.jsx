@@ -11,14 +11,14 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
 import Image from 'next/image'
-import { Button } from '@/components/button'
+import { Button } from '@/components/ui/button'
 import { HomeIcon, LucideFile, LucideFileVideo, Search, WalletCards } from 'lucide-react'
 import Link from 'next/link'
-import { SidebarMenu } from '@/components/sidebar'
+import { SidebarMenu } from '@/components/ui/sidebar'
 import { usePathname } from 'next/navigation'
 import { Gem } from 'lucide-react'
-import { useAuthContext } from '@/app/provider'
-// import { useAuthContext } from '../provider'
+// import { useAuthContext } from '@/app/provider'
+import { useAuthContext } from '../provider'
 
 
 
