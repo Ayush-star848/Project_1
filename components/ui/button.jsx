@@ -11,7 +11,10 @@ const buttonVariants = cva(
       variant: {
         default:
           "bg-primary text-primary-foreground shadow hover:bg-primary/90",
-        destructive:
+          sex: "gradient-background2 hover:text-blue-600 text-primary-foreground shadow hover:bg-primary/90",
+          sex1: "gradient-background2 border border-teal-500 hover:text-teal-400 text-primary-foreground shadow hover:bg-primary/90",
+          sex2: "gradient-background2 border border-indigo-500 hover:text-indigo-600 text-primary-foreground shadow hover:bg-primary/90",
+          destructive:
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
           "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
@@ -37,10 +40,10 @@ const buttonVariants = cva(
 const Button = React.forwardRef(({ className, variant, size, asChild = false, ...props }, ref) => {
   const Comp = asChild ? Slot : "button"
   return (
-    (<Comp
+    <Comp
       className={cn(buttonVariants({ variant, size, className }))}
       ref={ref}
-      {...props} />)
+      {...props} />
   );
 })
 Button.displayName = "Button"
