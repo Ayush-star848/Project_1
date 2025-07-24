@@ -1,5 +1,7 @@
 "use client";
-import { auth } from '@/configs/FirebaseConfig';
+// import { auth } from '@/configs/FirebaseConfig';
+import { auth } from '@/configs/firebaseConfig';
+
 import { GoogleAuthProvider,signInWithPopup } from 'firebase/auth';
 import React from 'react'
 

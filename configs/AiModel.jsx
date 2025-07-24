@@ -291,7 +291,8 @@ export { generateScript };
 // }
 
 import { getGenerativeModel, getAI } from "firebase/ai";
-import { firebaseApp } from "@/configs/FirebaseConfig";
+// import { firebaseApp } from "@/configs/FirebaseConfig";
+import { firebaseApp } from "@/configs/firebaseConfig"; // Ensure this path is correct
 export async function GenerateImageScript(script, style) {
   const prompt = `
 Generate Image prompt of ${style} style with all details for each scene for 30 seconds.
