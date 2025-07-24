@@ -4,8 +4,8 @@ import Image from 'next/image'
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import Authentication from './Authentication';
-import { useAuthContext } from '../provider';
-
+// import { useAuthContext } from '../provider';
+import { useAuthContext } from '@/app/(main)/provider'
 
  
 function Header() {

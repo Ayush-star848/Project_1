@@ -11,7 +11,8 @@ import axios from 'axios';
 import { useMutation } from 'convex/react';
 import { api } from '@/convex/_generated/api';
 // import { useAuthContext } from '@/app/provider';
-import { useAuthContext } from '../provider';
+// import { useAuthContext } from '../provider';
+import { useAuthContext } from '@/app/(main)/provider'
 import { useRouter } from 'next/navigation';
 import { toast } from 'sonner';
 

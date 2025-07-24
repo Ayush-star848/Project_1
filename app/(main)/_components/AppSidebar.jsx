@@ -18,8 +18,8 @@ import { SidebarMenu } from '@/components/ui/sidebar'
 import { usePathname } from 'next/navigation'
 import { Gem } from 'lucide-react'
 // import { useAuthContext } from '@/app/provider'
-import { useAuthContext } from '../provider'
-
+// import { useAuthContext } from '../provider'
+import { useAuthContext } from '@/app/(main)/provider'
 
 
 const MenuItems = [
