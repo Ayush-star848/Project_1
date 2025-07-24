@@ -8,7 +8,8 @@ import { Textarea } from '@/components/ui/textarea'
 import { Loader2Icon, SparklesIcon } from 'lucide-react'
 import axios from 'axios'
 import { toast } from 'react-hot-toast'
-import { useAuthContext } from '@/app/provider'
+// import { useAuthContext } from '@/app/provider'
+import { useAuthContext } from '../provider'
  
 
 const suggestions = [

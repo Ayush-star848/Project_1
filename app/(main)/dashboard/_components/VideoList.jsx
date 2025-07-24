@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { api } from '@/convex/_generated/api';
 import { useConvex } from 'convex/react';
-import { useAuthContext } from '@/app/provider';
+// import { useAuthContext } from '@/app/provider';
+import { useAuthContext } from '../provider'
 import moment from 'moment';
 import { RefreshCcw } from 'lucide-react';
 
