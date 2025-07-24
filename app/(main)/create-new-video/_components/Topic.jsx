@@ -10,10 +10,8 @@ import axios from 'axios'
 import { toast } from 'react-hot-toast'
 // import { useAuthContext } from '@/app/provider'
 // import { useAuthContext } from '../provider'
-import { useAuthContext } from '@/app/(main)/provider'
-
- 
-
+// import { useAuthContext } from '@/app/(main)/provider'
+import { useAuthContext } from '@/app/provider'
 const suggestions = [
     "Historic Story",
     "Kids Story",

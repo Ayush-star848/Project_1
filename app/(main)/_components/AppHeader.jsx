@@ -1,7 +1,8 @@
 "use client"
 // import { useAuthContext } from '@/app/provider'
 // import { useAuthContext } from '../provider'
-import { useAuthContext } from '@/app/(main)/provider'
+// import { useAuthContext } from '@/app/(main)/provider'
+import { useAuthContext } from '@/app/provider'
 
 
 import { SidebarTrigger } from '@/components/ui/sidebar'

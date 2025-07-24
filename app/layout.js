@@ -1,7 +1,8 @@
 import { Geist, Geist_Mono,Outfit } from "next/font/google";
 import "./globals.css";
 // import Provider from "@/app/provider";
-import { useAuthContext } from '@/app/(main)/provider'
+// import { useAuthContext } from '@/app/(main)/provider'
+import Provider from "./provider";
 import ConvexClientProvider from "./ConvexClientProvider";
 
 export const metadata = {
