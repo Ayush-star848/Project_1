@@ -1,7 +1,7 @@
 "use client"
 import { SidebarProvider } from '@/components/ui/sidebar'
 import React, { useEffect } from 'react'
-import Appsidebar from './_components/Appsidebar'
+import Appsidebar from './_components/AppSidebar'
 import AppHeader from './_components/AppHeader'
 import { useAuthContext } from '../provider'
 import { useRouter } from 'next/navigation'
