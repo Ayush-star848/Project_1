@@ -13,7 +13,7 @@ function AppHeader() {
     const {user} = useAuthContext();
   return (
     <div className='p-3 flex justify-between items-center shadow-md'>
-        <SidebarTrigger className="cursor-pointer" />
+        <SidebarTrigger className="cursor-pointer block" />
         <Image src={user?.pictureURL || '/default-user.png'} alt='user' width={40} height={40} className='rounded-full'/>
         </div>
   )
